@@ -1,1 +1,2 @@
-*.log
+ghostdriver.log
+mining/__pycache__/*.pyc

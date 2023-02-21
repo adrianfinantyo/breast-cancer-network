@@ -88,3 +88,9 @@ def diseases_mining():
     file_name = "{}-diseases-{}.csv".format(ts, num_dis)
 
     diseases_df.to_csv(file_path+file_name, index=False)
+
+
+def diseases_cleaning(df):
+    df = df.dropna()
+    df = df.drop_duplicates(['Disease'])
+    return df
